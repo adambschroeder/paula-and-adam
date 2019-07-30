@@ -1,0 +1,47 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+ol {
+  list-style: decimal;
+  margin: 15px 0 15px 25px;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 15px 0 15px 25px;
+}
+
+body {
+  font-family: $content-font;
+  font-size: $content-font-size;
+  color: $content-text-color;
+}
+
+.page-wrapper {
+  max-width: $max-page-width;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $page-gutters;
+  padding-right: $page-gutters;
+}
+
+@include mobile {
+  .page-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 6000;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: $primary-color;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img.header-logo {
+      width: 150px;
+      padding: 5px 0;
+    }
+
+    a {
+      flex: 0 0 auto;
+      text-decoration: none;
+      color: darken($light-content-color, 15%);
+
+      &.active.active--exact {
+        color: $light-content-color;
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a:hover {
+      color: $light-content-color;
+    }
+  }
+}

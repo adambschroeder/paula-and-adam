@@ -1,14 +1,7 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
-      </nav>
-    </header>
+    <PreHeader/>
+    <Header/>
     <slot/>
   </div>
 </template>
@@ -21,30 +14,21 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
+<script>
+import PreHeader from "~/components/PreHeader.vue";
+import Header from "~/components/Header.vue";
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+export default {
+  components: {
+    PreHeader,
+    Header
+  }
+};
+</script>
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
+<style lang="scss">
+@import "../assets/scss/main.scss";
+@import "../assets/scss/layouts/_default.scss";
 </style>
+
+

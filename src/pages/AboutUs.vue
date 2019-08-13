@@ -42,7 +42,7 @@ export default {
         .classList.add("animated", "fadeOut");
     }
   },
-  created() {
+  mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {

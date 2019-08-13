@@ -11,7 +11,11 @@
       <h1 class="title">About Us</h1>
 
       <div class="content-section content-section--flush">
-        <video style="width: 100%; display: block;" src="../assets/videos/proposal.mp4" controls></video>
+        <video
+          style="width: 100%; display: block;"
+          src="../assets/videos/proposal-video.mp4"
+          controls
+        ></video>
       </div>
       <div class="content-section">
         <h1>Our Story</h1>
@@ -27,10 +31,10 @@
         </p>
         <p>
           ...after winter break we ended up in the same class and the
-          good times ensued, even spending some time working
-          together at Menards. Soon after we began our relationship
+          good times rolled. We even spent some time working
+          together at Menards. Soon after, we began our relationship
           which has always been based on a strong friendship,
-          laughter, and good times. We make a great team. Together
+          laughter, and supporting one another. We make a great team. Together
           we have developed a strong love for travel, good beer,
           and making the most out of this crazy, wonderful life!
         </p>

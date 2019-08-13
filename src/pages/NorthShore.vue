@@ -58,7 +58,7 @@
             <a
               href="//www.facebook.com/schroederbakingcompany/"
               target="_blank"
-            >Schroeder Baking Company</a>: Perfect for a quick meal, coffee, or pasty. The cinnamon rolls
+            >Schroeder Baking Company</a>: Perfect for a quick meal, coffee, or pastry. The cinnamon rolls
             are dangerous.
           </li>
           <li>

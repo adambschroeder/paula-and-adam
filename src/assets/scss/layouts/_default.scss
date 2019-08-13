@@ -3,6 +3,12 @@
 
   &--with-hero {
     margin-top: calc(100vh - 157px);
+
+    @supports (-webkit-appearance: none) {
+      .os-android & {
+        margin-top: calc(100vh - 213px);
+      }
+    }
   }
 
   .content-section {

@@ -28,7 +28,7 @@
     </nav>
 
     <div
-      class="nav-mobile-menu page-wrapper animated"
+      class="nav-mobile-menu page-wrapper animated faster"
       v-bind:class="{ 'is-active slideInRight': isMenuOpen }"
     >
       <g-link to="/">Our Story</g-link>

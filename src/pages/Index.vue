@@ -24,7 +24,7 @@
           Paula were both living in the same (crappy)
           apartment complex at Minnesota State University,
           Mankato. Paula and her roommate Jaime were
-          bored one night and invited their friend Garret
+          bored one night and invited their friend Garrett
           over, who showed up with Adam. Right away, Paula
           felt like she knew Adam her whole life, and Adam thought
           Paula was cute in her camouflage sweatpants.
@@ -47,9 +47,6 @@
               <g-image src="../assets/images/slideshow2.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow3.jpg" />
-            </slide>
-            <slide>
               <g-image src="../assets/images/slideshow5.jpg" />
             </slide>
             <slide>
@@ -57,6 +54,9 @@
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow15.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow3.jpg" />
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow4.jpg" />

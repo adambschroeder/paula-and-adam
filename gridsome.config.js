@@ -4,25 +4,27 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const path = require("path");
+const path = require('path');
 
 function addStyleResource(rule) {
   rule
-    .use("style-resource")
-    .loader("style-resources-loader")
+    .use('style-resource')
+    .loader('style-resources-loader')
     .options({
-      patterns: [path.resolve(__dirname, "./src/assets/scss/globalImports.scss")]
+      patterns: [path.resolve(__dirname, './src/assets/scss/globalImports.scss')]
     });
 }
 
 module.exports = {
-  siteName: "Schroeders",
+  siteName: 'Schroeders',
   plugins: [],
+  icon: './src/assets/images/mtn-favicon.png',
+
   chainWebpack(config) {
-    const types = ["vue-modules", "vue", "normal-modules", "normal"];
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
 
     types.forEach(type => {
-      addStyleResource(config.module.rule("scss").oneOf(type));
+      addStyleResource(config.module.rule('scss').oneOf(type));
     });
   }
 };

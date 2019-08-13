@@ -37,65 +37,71 @@
       </div>
 
       <div class="content-section">
-        <carousel :centerMode="true" :perPage="1" :paginationSize="7">
-          <slide>
-            <g-image src="../assets/images/slideshow2.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow3.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow5.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow6.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow15.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow4.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow8.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow10.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow11.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow1.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow13.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow7.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow14.jpg" />
-          </slide>
-          <slide>
-            <g-image src="../assets/images/slideshow9.jpg" />
-          </slide>
-        </carousel>
+        <ClientOnly>
+          <carousel :centerMode="true" :perPage="1" :paginationSize="7">
+            <slide>
+              <g-image src="../assets/images/slideshow2.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow3.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow5.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow6.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow15.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow4.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow8.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow10.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow11.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow1.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow13.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow7.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow14.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow9.jpg" />
+            </slide>
+          </carousel>
+        </ClientOnly>
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
-
 export default {
   metaInfo: {
     title: "About Us"
   },
   components: {
-    Carousel,
-    Slide
+    Carousel: () =>
+      import("vue-carousel")
+        .then(m => m.Carousel)
+        .catch(),
+    Slide: () =>
+      import("vue-carousel")
+        .then(m => m.Slide)
+        .catch()
   },
   data() {
     return {
@@ -112,7 +118,7 @@ export default {
         .classList.add("animated", "fadeOut");
     }
   },
-  created() {
+  mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {

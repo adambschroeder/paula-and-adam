@@ -1,10 +1,6 @@
 <template>
   <Layout>
-    <div class="hero hero--the-wedding">
-      <video autoplay muted loop id="myVideo">
-        <source src="../assets/videos/hero-video.mp4" type="video/mp4" />Your browser does not support HTML5 video.
-      </video>
-    </div>
+    <div class="hero hero--accomodations"></div>
     <div class="content page-wrapper">
       <h1 class="title">Accomodations</h1>
 
@@ -37,8 +33,8 @@
       <div class="content-section">
         <h1>Other Accomodations</h1>
         <p>
-          There are some other options, potentially cheaper, though they would require driving and if there is drinking in your future
-          we would highly recommend y'all not to drive - please. Other options may also not have the two-night requiremt though a rarity.
+          There are some other options, potentially cheaper. As a heads up, some options require driving and we
+          were warned there are no cabs. Other options may also not have the two-night requiremt though a rarity.
         </p>
 
         <ul>
@@ -64,3 +60,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import "../assets/scss/pages/_accomodations.scss";
+</style>

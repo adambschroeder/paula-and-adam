@@ -1,0 +1,11 @@
+.hero {
+  &--accomodations {
+    background: url('../assets/images/hero-lake-superior.jpg') no-repeat center center;
+    background-size: cover;
+    filter: saturate(70%);
+
+    @include tablet {
+      background: url('../assets/images/hero-lake-superior-mobile.jpg') no-repeat center center;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="hero hero--about-us">
-      <div class="circle-arrow">
+      <div class="arrows-container">
         <span class="bounceAlpha arrow primera next"></span>
         <span class="bounceAlpha arrow segunda next"></span>
       </div>
@@ -10,35 +10,105 @@
     <div class="content content--with-hero page-wrapper">
       <h1 class="title">About Us</h1>
 
+      <div class="content-section content-section--flush">
+        <video style="width: 100%; display: block;" src="../assets/videos/proposal.mp4" controls></video>
+      </div>
       <div class="content-section">
-        <h1>How We Met</h1>
-        <div class="sub-header">12.11.2011</div>
-        <p>You really think you can fly that thing? Life finds a way. What do they got in there? King Kong? God help us, we’re in the hands of engineers. Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should.</p>
+        <h1>Our Story</h1>
+        <p>
+          It was winter break in 2012, Adam and
+          Paula were both living in the same (crappy)
+          apartment complex at Minnesota State University,
+          Mankato. Paula and her roommate Jaime were
+          bored one night and invited their friend Garret
+          over, who showed up with Adam. Right away, Paula
+          felt like she knew Adam her whole life, and Adam thought
+          Paula was cute in her camouflage sweatpants.
+        </p>
+        <p>
+          ...after winter break we ended up in the same class and the
+          good times ensued, even spending some time working
+          together at Menards. Soon after we began our relationship
+          which has always been based on a strong friendship,
+          laughter, and good times. We make a great team. Together
+          we have developed a strong love for travel, good beer,
+          and making the most out of this crazy, wonderful life!
+        </p>
+      </div>
 
-        <h1>The Proposal</h1>
-        <div class="sub-header">08.09.2020</div>
-        <p>They’re using our own satellites against us. And the clock is ticking. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and… power windows. Remind me to thank John for a lovely weekend. Just my luck, no ice. Did he just throw my cat out of the window?</p>
-
-        <h1>About Us</h1>
-        <p>From Paula:</p>
-        <p>Just my luck, no ice. Yeah, but your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should. Hey, you know how I’m, like, always trying to save the planet? Here’s my chance. What do they got in there? King Kong?</p>
-
-        <p>From Adam:</p>
-        <p>Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. They’re using our own satellites against us. And the clock is ticking. Hey, you know how I’m, like, always trying to save the planet? Here’s my chance. They’re using our own satellites against us. And the clock is ticking.</p>
+      <div class="content-section">
+        <carousel :centerMode="true" :perPage="1" :paginationSize="7">
+          <slide>
+            <g-image src="../assets/images/slideshow2.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow3.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow5.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow6.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow15.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow4.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow8.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow10.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow11.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow1.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow13.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow7.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow14.jpg" />
+          </slide>
+          <slide>
+            <g-image src="../assets/images/slideshow9.jpg" />
+          </slide>
+        </carousel>
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
+import { Carousel, Slide } from "vue-carousel";
+
 export default {
   metaInfo: {
     title: "About Us"
   },
+  components: {
+    Carousel,
+    Slide
+  },
+  data() {
+    return {
+      flickityOptions: JSON.stringify({
+        pageDots: false,
+        wrapAround: true
+      })
+    };
+  },
   methods: {
     handleScroll(event) {
       document
-        .querySelector(".circle-arrow")
+        .querySelector(".arrows-container")
         .classList.add("animated", "fadeOut");
     }
   },

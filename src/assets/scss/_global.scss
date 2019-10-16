@@ -50,7 +50,11 @@ body {
   }
 }
 
-/* external css: flickity.css */
+span.label {
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: lighten($secondary-color, 20%);
+}
 
 .VueCarousel-wrapper img {
   height: 500px;

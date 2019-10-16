@@ -11,7 +11,25 @@
           <u>It does require two nights stay</u> but within the wedding block there is a small discount or a free 3rd night.
           Also, condos available to accomodate larger groups.
         </p>
-        <p>To book, follow these steps:</p>
+        <p>To book, you can either do it online or call:</p>
+        <br />
+        <strong>Online</strong>
+        <ol>
+          <li>
+            Head to Eagle Ridge Resort's
+            <a
+              target="blank"
+              href="//www.eagleridgeatlutsen.com/lodging-promo-codes/"
+            >booking website</a>
+          </li>
+          <li>
+            Scroll down and enter the following booking code:
+            <span class="label">SCHRFISC</span>
+          </li>
+          <li>From there follow through the booking steps on the website</li>
+        </ol>
+
+        <strong>Call</strong>
         <ol>
           <li>
             Call up
@@ -45,7 +63,7 @@
             <a href="//www.lutsenresort.com/" target="_blank">Lutsen Resort</a>: 5min drive down the hill from the gondola - on the lake.
           </li>
           <li>
-            <a href="//www.airbnb.com">Airbnb</a>: variable locations but could accomodate a larger group.
+            <a href="//www.airbnb.com">Airbnb</a>: Variable locations but could accomodate a larger group.
           </li>
         </ul>
       </div>

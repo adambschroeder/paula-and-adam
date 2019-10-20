@@ -27,10 +27,7 @@
       </div>
     </nav>
 
-    <div
-      class="nav-mobile-menu page-wrapper animated faster"
-      v-bind:class="{ 'is-active slideInRight': isMenuOpen }"
-    >
+    <div class="nav-mobile-menu page-wrapper" v-bind:class="{ 'is-active': isMenuOpen }">
       <g-link to="/">Our Story</g-link>
       <g-link to="/wedding">Wedding</g-link>
       <g-link to="/accomodations">Accomodations</g-link>
@@ -49,27 +46,12 @@ export default {
     };
   },
   methods: {
-    animate: function(selector, animationName, callback) {
-      const node = document.querySelector(selector);
-      node.classList.add("animated", animationName);
-
-      function handleAnimationEnd() {
-        node.classList.remove("animated", animationName);
-        node.removeEventListener("animationend", handleAnimationEnd);
-
-        if (typeof callback === "function") callback();
-      }
-
-      node.addEventListener("animationend", handleAnimationEnd);
-    },
     displayMenu: function(event) {
       var self = this;
       self.isBurgerOpen = !self.isBurgerOpen;
 
       if (self.isMenuOpen) {
-        self.animate(".nav-mobile-menu", "slideOutRight", function() {
-          self.isMenuOpen = false;
-        });
+        self.isMenuOpen = false;
       } else {
         self.isMenuOpen = true;
       }

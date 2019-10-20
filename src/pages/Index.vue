@@ -44,6 +44,9 @@
         <ClientOnly>
           <carousel :centerMode="true" :perPage="1" :paginationSize="7">
             <slide>
+              <g-image src="../assets/images/slideshow7.jpg" />
+            </slide>
+            <slide>
               <g-image src="../assets/images/slideshow2.jpg" />
             </slide>
             <slide>
@@ -54,6 +57,9 @@
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow15.jpg" />
+            </slide>
+            <slide>
+              <g-image src="../assets/images/slideshow16.jpg" />
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow3.jpg" />
@@ -75,9 +81,6 @@
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow13.jpg" />
-            </slide>
-            <slide>
-              <g-image src="../assets/images/slideshow7.jpg" />
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow14.jpg" />

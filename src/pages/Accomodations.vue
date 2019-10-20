@@ -63,7 +63,7 @@
             <a href="//www.lutsenresort.com/" target="_blank">Lutsen Resort</a>: 5min drive down the hill from the gondola - on the lake.
           </li>
           <li>
-            <a href="//www.airbnb.com">Airbnb</a>: Variable locations but could accomodate a larger group.
+            <a href="//www.airbnb.com/s/Lutsen--MN/homes">Airbnb</a>: Variable locations but could accomodate a larger group.
           </li>
         </ul>
       </div>

@@ -8,7 +8,7 @@
         <div class="nav-links">
           <g-link to="/">About Us</g-link>
           <g-link to="/wedding">Wedding</g-link>
-          <g-link to="/accomodations">Accomodations</g-link>
+          <g-link to="/accommodations">Accommodations</g-link>
           <g-link to="/north-shore">North Shore</g-link>
         </div>
 
@@ -30,7 +30,7 @@
     <div class="nav-mobile-menu page-wrapper" v-bind:class="{ 'is-active': isMenuOpen }">
       <g-link to="/">Our Story</g-link>
       <g-link to="/wedding">Wedding</g-link>
-      <g-link to="/accomodations">Accomodations</g-link>
+      <g-link to="/accommodations">Accommodations</g-link>
       <g-link to="/north-shore">North Shore</g-link>
     </div>
   </header>

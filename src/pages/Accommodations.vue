@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    <div class="hero hero--accomodations"></div>
+    <div class="hero hero--accommodations"></div>
     <div class="content page-wrapper">
-      <h1 class="title">Accomodations</h1>
+      <h1 class="title">Accommodations</h1>
 
       <div class="content-section">
         <h1>Eagle Ridge Resort</h1>
         <p>
-          This is the resort the wedding is located and within walking distance of Gondola.
+          This is the resort the wedding is located and within walking distance of the Gondola.
           <u>It does require two nights stay</u> but within the wedding block there is a small discount or a free 3rd night.
           Also, condos available to accomodate larger groups.
         </p>
@@ -49,10 +49,10 @@
       </div>
 
       <div class="content-section">
-        <h1>Other Accomodations</h1>
+        <h1>Other Accommodations</h1>
         <p>
           There are some other options, potentially cheaper. As a heads up, some options require driving and we
-          were warned there are no cabs. Other options may also not have the two-night requiremt though a rarity.
+          were warned there are no cabs. Other options may also not have the two-night requirement though a rarity.
         </p>
 
         <ul>
@@ -63,7 +63,7 @@
             <a href="//www.lutsenresort.com/" target="_blank">Lutsen Resort</a>: 5min drive down the hill from the gondola - on the lake.
           </li>
           <li>
-            <a href="//www.airbnb.com/s/Lutsen--MN/homes">Airbnb</a>: Variable locations but could accomodate a larger group.
+            <a href="//www.airbnb.com/s/Lutsen--MN/homes">Airbnb</a>: Variable locations but could accommodate a larger group.
           </li>
         </ul>
       </div>
@@ -74,11 +74,11 @@
 <script>
 export default {
   metaInfo: {
-    title: "Accomodations"
+    title: "Accommodations"
   }
 };
 </script>
 
 <style lang="scss">
-@import "../assets/scss/pages/_accomodations.scss";
+@import "../assets/scss/pages/_accommodations.scss";
 </style>

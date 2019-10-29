@@ -8,7 +8,7 @@
         <nav class="page-wrapper">
           <g-link to="/">About Us</g-link>
           <g-link to="/wedding">The Wedding</g-link>
-          <g-link to="/accomodations">Accomodations</g-link>
+          <g-link to="/accommodations">Accommodations</g-link>
           <g-link to="/things-to-do">Things to Do</g-link>
         </nav>
       </div>

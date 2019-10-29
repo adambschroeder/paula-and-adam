@@ -47,6 +47,9 @@
               <g-image src="../assets/images/slideshow7.jpg" />
             </slide>
             <slide>
+              <g-image src="../assets/images/slideshow17.jpg" />
+            </slide>
+            <slide>
               <g-image src="../assets/images/slideshow2.jpg" />
             </slide>
             <slide>
@@ -84,9 +87,6 @@
             </slide>
             <slide>
               <g-image src="../assets/images/slideshow14.jpg" />
-            </slide>
-            <slide>
-              <g-image src="../assets/images/slideshow9.jpg" />
             </slide>
           </carousel>
         </ClientOnly>

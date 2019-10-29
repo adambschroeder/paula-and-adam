@@ -44,49 +44,61 @@
         <ClientOnly>
           <carousel :centerMode="true" :perPage="1" :paginationSize="7">
             <slide>
-              <g-image src="../assets/images/slideshow7.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow7.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow17.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow19.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow2.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow17.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow5.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow2.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow6.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow5.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow15.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow9.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow16.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow18.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow3.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow6.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow4.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow15.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow8.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow16.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow10.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow3.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow11.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow12.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow1.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow4.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow13.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow8.jpg" />
             </slide>
             <slide>
-              <g-image src="../assets/images/slideshow14.jpg" />
+              <g-image blur="20" src="../assets/images/slideshow10.jpg" />
+            </slide>
+            <slide>
+              <g-image blur="20" src="../assets/images/slideshow11.jpg" />
+            </slide>
+            <slide>
+              <g-image blur="20" src="../assets/images/slideshow1.jpg" />
+            </slide>
+            <slide>
+              <g-image blur="20" src="../assets/images/slideshow13.jpg" />
+            </slide>
+            <slide>
+              <g-image blur="20" src="../assets/images/slideshow14.jpg" />
             </slide>
           </carousel>
         </ClientOnly>

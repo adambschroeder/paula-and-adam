@@ -75,7 +75,7 @@
 
         <div class="labelled-content">
           <div class="label">Dinner:</div>
-          <div>To be determined but there will be options. We love to eat.</div>
+          <div>Buffet style with beef tenderloin and fried walleye fillets. Sides will include mashed potatoes, green beans, and wild rice.</div>
         </div>
 
         <div class="labelled-content">
